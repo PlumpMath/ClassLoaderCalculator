@@ -22,3 +22,8 @@ Undeploy :
 ```bash
    mvn wildfly:undeploy
 ```
+
+Redeploy :
+```bash
+   mvn wildfly:redeploy
+```
