@@ -13,9 +13,14 @@ or
    %JBOSS_HOME%\bin\standalone.bat
 ```
 
-Build and deploy :
+Build : 
 ```bash
-   mvn clean install wildfly:deploy
+   mvn clean install package
+```
+
+Deploy :
+```bash
+   mvn wildfly:deploy
 ```
 
 Undeploy :
