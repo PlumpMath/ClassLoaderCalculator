@@ -8,19 +8,29 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Calculator Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
+
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.moss.calculator</groupId>
+      <artifactId>ArithmeticCalculator</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ArithmeticCalculator-0.0.1-SNAPSHOT.jar</systemPath>
+    </dependency>
+  </dependencies>
+
   <build>
-		<finalName>Calculator</finalName>
-		<plugins>
-			<plugin>
-                <groupId>org.wildfly.plugins</groupId>
-                <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.1.0.Alpha7</version>
-            </plugin>
-		</plugins>
-	</build>
+    <finalName>Calculator</finalName>
+	  <plugins>
+		<plugin>
+          <groupId>org.wildfly.plugins</groupId>
+          <artifactId>wildfly-maven-plugin</artifactId>
+          <version>1.1.0.Alpha7</version>
+        </plugin>
+      </plugins>
+  </build>
 </project>

@@ -6,5 +6,6 @@ import com.moss.calculator.Calculator;
 
 public class Test {
 
-	BigDecimal number = Calculator.round(34.156);
+	public static double number = 2.45;
+	public static BigDecimal roundNumber = Calculator.round(2.45);
 }
