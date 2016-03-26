@@ -1,4 +1,4 @@
-package com.moss.calculator;
+package com.moss;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
